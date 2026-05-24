@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|c:\\users\\hp\\btk 3d e\u011F\u0130t\u0130m\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\healtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\spownenemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spownenemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\\u00E7arkmoment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\\u00E7arkmoment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\assets\\scripts\\rotatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{601D8FB1-DF8B-BD48-207E-C6E76AE26DB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimatorController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\AnimatorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AnimatorController.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\AnimatorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AnimatorController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:56:51.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpownEnemyManager.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\SpownEnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpownEnemyManager.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\SpownEnemyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpownEnemyManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T17:45:02.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "\u00C7arkMoment.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\\u00C7arkMoment.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\\u00C7arkMoment.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\\u00C7arkMoment.cs",
+              "RelativeToolTip": "Assets\\Scripts\\\u00C7arkMoment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T13:41:15.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HealtController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\HealtController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealtController.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\HealtController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealtController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:21:23.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T11:25:07.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinManager.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T15:26:40.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ObstacleController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\ObstacleController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObstacleController.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\ObstacleController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObstacleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:31:30.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RotateController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\RotateController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotateController.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\RotateController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T11:09:09.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
+              "ToolTip": "C:\\Users\\hp\\BTK 3D E\u011E\u0130T\u0130M\\Assets\\Scripts\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA9wCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:31:07.117Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
