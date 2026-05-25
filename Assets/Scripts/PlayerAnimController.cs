@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AnimatorController : MonoBehaviour
+public class PlayerAnimController : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody rb;
@@ -79,5 +79,6 @@ public class AnimatorController : MonoBehaviour
     {
         yerdemi=false;
     }
+   
 }
 

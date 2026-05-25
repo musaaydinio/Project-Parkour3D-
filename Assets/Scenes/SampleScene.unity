@@ -4550,9 +4550,10 @@ GameObject:
   - component: {fileID: 5496430628770570476}
   - component: {fileID: 5496430628770570478}
   - component: {fileID: 5496430628770570477}
+  - component: {fileID: 5496430628770570479}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5608,8 +5609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793ae71b6a63c5e48a62c75b71f49b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "y\xFCr\xFCmeHizi": 2
-  kosmaHizi: 4
+  "y\xFCr\xFCmeHizi": 3
+  kosmaHizi: 5
   "ziplamag\xFCc\xFC": 4
   donmeHizi: 120
 --- !u!54 &5496430628770570477
@@ -5662,6 +5663,21 @@ CapsuleCollider:
   m_Height: 1.4
   m_Direction: 1
   m_Center: {x: 0, y: 0.61, z: 0}
+--- !u!114 &5496430628770570479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291621533621411883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684b7ef31f46bed42808c455691f8277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCan: 20
+  toplamPuan: 0
+  playerAnimController: {fileID: 5496430628770570476}
 --- !u!4 &5533658037170645010
 Transform:
   m_ObjectHideFlags: 0
