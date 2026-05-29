@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerAnimController.cs" />
+    <Compile Include="Assets\Scripts\Staplebarrier.cs" />
     <Compile Include="Assets\Scripts\CoinManager.cs" />
     <Compile Include="Assets\Scripts\HealtController.cs" />
     <Compile Include="Assets\Scripts\SpownEnemyManager.cs" />
