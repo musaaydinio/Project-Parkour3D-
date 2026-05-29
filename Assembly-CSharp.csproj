@@ -62,15 +62,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerAnimController.cs" />
-    <Compile Include="Assets\Scripts\Staplebarrier.cs" />
     <Compile Include="Assets\Scripts\CoinManager.cs" />
+    <Compile Include="Assets\Scripts\Engeller\Slow.cs" />
     <Compile Include="Assets\Scripts\HealtController.cs" />
+    <Compile Include="Assets\Scripts\Engeller\RotateController.cs" />
     <Compile Include="Assets\Scripts\SpownEnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Engeller\Staplebarrier.cs" />
+    <Compile Include="Assets\Scripts\Engeller\ObstacleController.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\RotateController.cs" />
-    <Compile Include="Assets\Scripts\ObstacleController.cs" />
-    <Compile Include="Assets\Scripts\ÇarkMoment.cs" />
+    <Compile Include="Assets\Scripts\Engeller\ÇarkMoment.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
