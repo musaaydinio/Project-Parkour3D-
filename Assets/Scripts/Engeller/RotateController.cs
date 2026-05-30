@@ -8,7 +8,14 @@ public class RotateController : MonoBehaviour
 
     private void Update()
     {
-        donecekTransform.Rotate(Vector3.up*donushizi*Time.deltaTime);
-    }
+        if (CompareTag("Yatay"))
+        {
+            donecekTransform.Rotate(Vector3.up * donushizi * Time.deltaTime);
+        }
+        if(CompareTag("Dikey"))
+        {
+            donecekTransform.Rotate(Vector3.forward*donushizi * Time.deltaTime);
+        }
+    }   
 
 }

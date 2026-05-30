@@ -50,5 +50,15 @@ public class HealtController : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("SampleScene");
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Dýþalan"))
+        {
+            DeathAnimStart();
+            RestartGame(3);
+        }
+    }
+    
 }
+
+
