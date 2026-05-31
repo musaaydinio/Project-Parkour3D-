@@ -20,10 +20,13 @@ public class PlayerAnimController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&& yerdemi)
+        if (Input.GetKeyDown(KeyCode.Space) && yerdemi)
         {
-            anim.SetTrigger("isJumping");
-            rb.AddForce(Vector3.up * ziplamagücü, ForceMode.Impulse);
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, ziplamagücü, rb.linearVelocity.z);
+            if (anim != null)
+            {
+                anim.SetTrigger("isJumping");
+            }
             yerdemi = false;
         }
 
@@ -42,8 +45,8 @@ public class PlayerAnimController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 // KOÞMA DURUMU
-                anim.SetBool("isWalking", false); 
-                anim.SetBool("isRunning", true); 
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isRunning", true);
 
                 // Karakteri koþma hýzýyla ileri götür
                 transform.Translate(Vector3.forward * kosmaHizi * Time.deltaTime);
@@ -62,7 +65,7 @@ public class PlayerAnimController : MonoBehaviour
         {
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", false);
-            transform.Translate(Vector3.back*(yürümeHizi/2)*Time.deltaTime);
+            transform.Translate(Vector3.back * (yürümeHizi / 2) * Time.deltaTime);
         }
         else
         {
@@ -74,11 +77,30 @@ public class PlayerAnimController : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         yerdemi = true;
+
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit(Collision other)
     {
+        yerdemi = false;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SonsuzZýplama"))
+        {
+            if (rb != null)
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+            // 2. Yukarý doðru zýplama gücünü ver (ziplamaGucu deðiþken adýný kendi scriptindekiyle eþitle)
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, ziplamagücü, rb.linearVelocity.z);
+        }
+
+        if (anim != null)
+        {
+            // 3. Zýplama animasyonunu tetikle (Animator panelindeki trigger adýn neyse onu yaz)
+            anim.SetTrigger("isJumping");
+        }
         yerdemi=false;
     }
-   
 }
+
 
