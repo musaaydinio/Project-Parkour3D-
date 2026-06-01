@@ -7,6 +7,8 @@ public class Staplebarrier : MonoBehaviour
     public float beklemesuresi = 1f;
     public float hareketsuresi = 0.5f;
     public float zMesafe = 3.5f;
+    public float xMesafe = 0;
+    public float yMesafe = -2f;
 
     private float yukarýfýrlatma = 10f;
     private float ilerifýrlatma = 8f;
@@ -23,7 +25,7 @@ public class Staplebarrier : MonoBehaviour
         if(CompareTag("Yatay"))
         { 
         Vector3 baslangicpoz=transform.position;
-        Vector3 ileripos=baslangicpoz+new Vector3(0,0,zMesafe);
+        Vector3 ileripos=baslangicpoz+new Vector3(xMesafe,0,zMesafe);
         bool ilerigiidyor = true;
 
             while (true)
@@ -47,7 +49,7 @@ public class Staplebarrier : MonoBehaviour
         if (CompareTag("Dikey"))
         {
             Vector3 baslangicpoz = transform.position;
-            Vector3 geripos = baslangicpoz + new Vector3(0,-2f,0);
+            Vector3 geripos = baslangicpoz + new Vector3(0,yMesafe,0);
             bool ilerigiidyor = true;
 
             while (true)

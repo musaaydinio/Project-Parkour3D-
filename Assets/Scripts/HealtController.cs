@@ -1,22 +1,27 @@
 using System.Collections;
+using TMPro;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HealtController : MonoBehaviour
 {
     private Animator animator;
     public int maxCan=100;
     public int toplamPuan = 0;
-   
 
     private int geçerliCan;
+
+    public Image canbarý;
+    public TextMeshProUGUI canyazisi;
 
     public PlayerAnimController playerAnimController;
     private void Start()
     {
         geçerliCan = maxCan;
         animator = GetComponent<Animator>();
+        CanbarýGuncelle();
     }
 
     public void RestartGame(float delay)
@@ -33,6 +38,19 @@ public class HealtController : MonoBehaviour
            if (playerAnimController != null) playerAnimController.enabled = false;
             DeathAnimStart();
             RestartGame(3);
+        }
+        CanbarýGuncelle();
+    }
+
+    private void CanbarýGuncelle()
+    {
+        if (canbarý != null)
+        {
+            canbarý.fillAmount = (float)geçerliCan / maxCan;
+        }
+        if( canyazisi != null)
+        {
+            canyazisi.text=geçerliCan.ToString();
         }
     }
 
@@ -54,8 +72,10 @@ public class HealtController : MonoBehaviour
     {
         if (other.CompareTag("Dýþalan"))
         {
+            geçerliCan = 0;
             DeathAnimStart();
             RestartGame(3);
+            CanbarýGuncelle();
         }
     }
     
