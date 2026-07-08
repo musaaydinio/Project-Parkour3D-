@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerAnimController.cs" />
+    <Compile Include="Assets\Scripts\UIscripts\PausePanel.cs" />
     <Compile Include="Assets\Scripts\CoinManager.cs" />
     <Compile Include="Assets\Scripts\Engeller\Slow.cs" />
     <Compile Include="Assets\Scripts\HealtController.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\UIscripts\MaınMenu.cs" />
     <Compile Include="Assets\Scripts\Engeller\ÇarkMoment.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\UIscripts\SettingMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
