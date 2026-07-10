@@ -32,11 +32,21 @@ public class PlayerAnimController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.up, -donmeHizi * Time.deltaTime);
+            anim.SetBool("isLeft", true);
+            transform.Translate(Vector3.left * yürümeHizi * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetBool("isLeft",false);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.up, donmeHizi * Time.deltaTime);
+            anim.SetBool("isRight",true);
+            transform.Translate(Vector3.right * yürümeHizi * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetBool("isRight",false) ;
         }
         //  ÖNCELÝKLE OYUNCU ÝLERÝ GÝTMEK ÝÇÝN W TUÞUNA BASIYOR MU?
         if (Input.GetKey(KeyCode.W))

@@ -11,7 +11,7 @@ public class PausePanel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (oyunDurdumu == true)
             {
