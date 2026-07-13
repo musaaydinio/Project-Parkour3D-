@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\3D_PARKUR_GAME\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\staplebarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\staplebarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|c:\\users\\hp\\3d_parkur_game\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\playeranimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\settingmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\settingmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\healtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\rotatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\rotatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\staplebarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\staplebarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\slow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "PausePanel.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\PausePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\PausePanel.cs",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Assets\\Scripts\\UIscripts\\PausePanel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T10:51:02.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T10:51:02.179Z"
             },
             {
               "$type": "Document",
@@ -85,14 +84,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\CameraController.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwCIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T15:32:59.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SettingMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SettingMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SettingMenu.cs",
@@ -104,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Ma\u0131nMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
@@ -116,31 +115,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "ObstacleController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\ObstacleController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\ObstacleController.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\ObstacleController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Engeller\\ObstacleController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T09:52:25.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Staplebarrier.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\Staplebarrier.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\Staplebarrier.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\Staplebarrier.cs",
               "RelativeToolTip": "Assets\\Scripts\\Engeller\\Staplebarrier.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAiwB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T10:01:42.359Z"
+              "WhenOpened": "2026-05-30T10:01:42.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RotateController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\RotateController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\RotateController.cs",
@@ -188,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PlayerAnimController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\PlayerAnimController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAnimController.cs",
@@ -196,12 +196,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerAnimController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAADAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:28:22.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:28:22.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ObstacleController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\ObstacleController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObstacleController.cs",
@@ -212,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HealtController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\HealtController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealtController.cs",

@@ -10,8 +10,8 @@ public class Staplebarrier : MonoBehaviour
     public float xMesafe = 0;
     public float yMesafe = -2f;
 
-    private float yukarýfýrlatma = 10f;
-    private float ilerifýrlatma = 8f;
+    [SerializeField] float yukarýfýrlatma = 10f;
+    [SerializeField] float ilerifýrlatma = 8f;
 
     private GameObject ustundekiKarekter;
     

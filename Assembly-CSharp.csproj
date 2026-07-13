@@ -74,6 +74,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\UIscripts\MaınMenu.cs" />
     <Compile Include="Assets\Scripts\Engeller\ÇarkMoment.cs" />
+    <Compile Include="Assets\Scripts\Engeller\Speed.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SettingMenu.cs" />
   </ItemGroup>
@@ -98,6 +99,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\POLY STYLE - Platformer Starter Pack\Readme.txt" />
+    <None Include="Assets\KayKit_Platformer_Pack_1.0_FREE\License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
