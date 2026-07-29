@@ -17,29 +17,43 @@ public class HealtController : MonoBehaviour
     public TextMeshProUGUI canyazisi;
 
     public PlayerAnimController playerAnimController;
+
+    private Vector3 sonkayýtNoktasý;
+    private CharacterController characterController;
+    private Rigidbody rb;
     private void Start()
     {
         geçerliCan = maxCan;
         animator = GetComponent<Animator>();
+        characterController= GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+        sonkayýtNoktasý=transform.position;
         CanbarýGuncelle();
     }
 
-    public void RestartGame(float delay)
+    public void SetCehckpoint(Vector3 yeninokta)
     {
-        StartCoroutine(RestartRoutine(delay));
+        sonkayýtNoktasý = yeninokta;
+        Debug.Log("Yeni Checkpoint Kayededildi:" + yeninokta);
     }
+
     public void HasarAlma(int hasarMiktarý)
     {
-        geçerliCan-=hasarMiktarý;
+        geçerliCan -= hasarMiktarý;
 
         if (geçerliCan <= 0)
         {
-            geçerliCan=0;
-           if (playerAnimController != null) playerAnimController.enabled = false;
-            DeathAnimStart();
-            RestartGame(3);
+            OLumSureci();
         }
         CanbarýGuncelle();
+    }
+
+    private void OLumSureci()
+    {
+        geçerliCan = 0;
+        if(playerAnimController != null)playerAnimController.enabled = false;
+        DeathAnimStart();
+        StartCoroutine(RespawnRoutine(3f));
     }
 
     private void CanbarýGuncelle()
@@ -54,27 +68,37 @@ public class HealtController : MonoBehaviour
         }
     }
 
-    public void PuanTopla(int puanmiktarý)
+    private IEnumerator RespawnRoutine(float delay)
     {
-        toplamPuan += puanmiktarý;
+        yield return new WaitForSeconds(delay);
+
+        geçerliCan=maxCan;
+        CanbarýGuncelle();
+
+        if(characterController != null) characterController.enabled = false;
+        transform.position = sonkayýtNoktasý;
+        if(characterController !=null)characterController.enabled = true;
+
+        if (rb != null)
+        {
+            rb.linearVelocity=Vector3.zero;
+            rb.angularVelocity=Vector3.zero;
+        }
+
+        if(animator != null)animator.Rebind();
+        if(playerAnimController!=null) playerAnimController.enabled = true ;
     }
 
     public void DeathAnimStart()
     {
-        animator.SetTrigger("Die");
+        if(animator!=null)animator.SetTrigger("Die");
     }
-    private IEnumerator RestartRoutine(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("SampleScene");
-    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Dýþalan"))
         {
-            geçerliCan = 0;
-            DeathAnimStart();
-            RestartGame(3);
+            OLumSureci();                    
             CanbarýGuncelle();
         }
     }

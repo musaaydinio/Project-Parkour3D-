@@ -6,7 +6,8 @@ public class SettingMenu : MonoBehaviour
     public static int secilenKalite = 2;
    public void TamEkran(bool tamekranmi) 
    {
-        Screen.fullScreen = tamekranmi;         
+        Screen.fullScreen = tamekranmi;
+       
    }
 
     public void GrafikKalite(int indeks)
@@ -33,5 +34,24 @@ public class SettingMenu : MonoBehaviour
     public void SesSeviye(float sesDegeri)
     {
         AudioListener.volume = sesDegeri;
+    }
+    public void FPSDeðeri(int fpsýndex)
+    {
+        switch (fpsýndex)
+        {
+            case 0:
+                QualitySettings.vSyncCount = 0;
+                Application.targetFrameRate = 60;
+                break;
+            case 1:
+                QualitySettings.vSyncCount = 0;
+                Application.targetFrameRate = 144;
+                break;
+            case 2:
+                QualitySettings.vSyncCount = 0;
+                Application.targetFrameRate = -1;
+                break;
+        }
+        Debug.Log("FPS sýnýrý þu indekse ayarlandý"+fpsýndex);
     }
 }
