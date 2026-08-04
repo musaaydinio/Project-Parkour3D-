@@ -21,6 +21,8 @@ public class HealtController : MonoBehaviour
     private Vector3 sonkayýtNoktasý;
     private CharacterController characterController;
     private Rigidbody rb;
+
+    private bool respawnyapiliyor=false;
     private void Start()
     {
         geçerliCan = maxCan;
@@ -39,18 +41,29 @@ public class HealtController : MonoBehaviour
 
     public void HasarAlma(int hasarMiktarý)
     {
+        if(respawnyapiliyor) return;
+
         geçerliCan -= hasarMiktarý;
 
         if (geçerliCan <= 0)
         {
             OLumSureci();
         }
-        CanbarýGuncelle();
+
+        GetComponent<SoundManager>().HasarSesiCal();
+
+            CanbarýGuncelle();
     }
 
     private void OLumSureci()
     {
+        if(respawnyapiliyor) return ;
+        respawnyapiliyor = true;
+
         geçerliCan = 0;
+
+        GetComponent<SoundManager>().OlumSesical();
+
         if(playerAnimController != null)playerAnimController.enabled = false;
         DeathAnimStart();
         StartCoroutine(RespawnRoutine(3f));
@@ -75,6 +88,8 @@ public class HealtController : MonoBehaviour
         geçerliCan=maxCan;
         CanbarýGuncelle();
 
+        GetComponent<SoundManager>().OyunMuzigiBaslat();
+
         if(characterController != null) characterController.enabled = false;
         transform.position = sonkayýtNoktasý;
         if(characterController !=null)characterController.enabled = true;
@@ -87,6 +102,8 @@ public class HealtController : MonoBehaviour
 
         if(animator != null)animator.Rebind();
         if(playerAnimController!=null) playerAnimController.enabled = true ;
+
+        respawnyapiliyor = false;
     }
 
     public void DeathAnimStart()

@@ -6,7 +6,7 @@ public class SureText : MonoBehaviour
     public TextMeshProUGUI oyunSayac;
 
     private float gecenZaman = 0f;
-    private bool devamEdiyor=true;
+    private bool devamEdiyor=false;
 
     private void Update()
     {
@@ -23,8 +23,17 @@ public class SureText : MonoBehaviour
             }
         }
     }
+
+    public void OyunuBaslat()
+    {
+        devamEdiyor = true;
+    }
     public void OyunDurdur()
     {
         devamEdiyor = false;  
+    }
+    public float GetGecenZaman()
+    {
+        return gecenZaman;
     }
 }

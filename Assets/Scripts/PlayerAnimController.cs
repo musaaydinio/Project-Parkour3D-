@@ -25,6 +25,7 @@ public class PlayerAnimController : MonoBehaviour
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, ziplamagücü, rb.linearVelocity.z);
             if (anim != null)
             {
+                GetComponent<SoundManager>().ZiplamaSesiCal();
                 anim.SetTrigger("isJumping");
             }
             yerdemi = false;
@@ -48,26 +49,26 @@ public class PlayerAnimController : MonoBehaviour
         {
             anim.SetBool("isRight",false) ;
         }
-        //  ÖNCELÝKLE OYUNCU ÝLERÝ GÝTMEK ÝÇÝN W TUÞUNA BASIYOR MU?
+       
         if (Input.GetKey(KeyCode.W))
         {
-            // W'ye basýlýrken AYNI ANDA Sol Shift tuþuna da basýlýyor mu?
+           
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                // KOÞMA DURUMU
+               
                 anim.SetBool("isWalking", false);
                 anim.SetBool("isRunning", true);
 
-                // Karakteri koþma hýzýyla ileri götür
+               
                 transform.Translate(Vector3.forward * kosmaHizi * Time.deltaTime);
             }
             else
             {
-                // SADECE YÜRÜME DURUMU (W'ye basýlýyor ama Shift'e basýlmýyor)
+                
                 anim.SetBool("isWalking", true);
                 anim.SetBool("isRunning", false);
 
-                // Karakteri normal yürüme hýzýyla ileri götür
+               
                 transform.Translate(Vector3.forward * yürümeHizi * Time.deltaTime);
             }
         }
@@ -79,7 +80,7 @@ public class PlayerAnimController : MonoBehaviour
         }
         else
         {
-            // OYUNCU ELÝNÝ W TUÞUNDAN ÇEKTÝ (IDLE - DURMA DURUMU)
+            
             anim.SetBool("isWalking", false);
             anim.SetBool("isRunning", false);
         }
@@ -100,13 +101,13 @@ public class PlayerAnimController : MonoBehaviour
             if (rb != null)
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
-            // 2. Yukarý doðru zýplama gücünü ver (ziplamaGucu deðiþken adýný kendi scriptindekiyle eþitle)
+           
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, ziplamagücü, rb.linearVelocity.z);
         }
 
         if (anim != null)
         {
-            // 3. Zýplama animasyonunu tetikle (Animator panelindeki trigger adýn neyse onu yaz)
+           
             anim.SetTrigger("isJumping");
         }
         yerdemi=false;

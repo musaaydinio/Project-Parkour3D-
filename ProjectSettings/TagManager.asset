@@ -9,6 +9,9 @@ TagManager:
   - Dikey
   - "D\u0131\u015Falan"
   - "SonsuzZ\u0131plama"
+  - Obstcales
+  - FxTemporaire
+  - Obstacle
   layers:
   - Default
   - TransparentFX

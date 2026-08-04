@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4123809807669975722}
   - component: {fileID: 740526221615012046}
   - component: {fileID: 4528068493792695991}
+  - component: {fileID: -8351633234627626275}
   m_Layer: 0
   m_Name: "at\u0131lacakbomb"
   m_TagString: Untagged
@@ -82,6 +83,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8351633234627626275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643845581212253940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17637df2bd7159a418855796eba57688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "hasarMiktar\u0131": 100
 --- !u!1 &6221732779889591570
 GameObject:
   m_ObjectHideFlags: 0

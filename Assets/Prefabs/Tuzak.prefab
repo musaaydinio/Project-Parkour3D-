@@ -28,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2875834817388219821}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.22967005, y: -0.38459468, z: -0.05913925}
-  m_LocalScale: {x: 1.0609535, y: 1, z: 1.6357846}
+  m_LocalScale: {x: 1.5, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3588486061904991997}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17637df2bd7159a418855796eba57688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "hasarMiktar\u0131": 10
+  "hasarMiktar\u0131": 50
 --- !u!65 &2624807470676883499
 BoxCollider:
   m_ObjectHideFlags: 0

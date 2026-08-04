@@ -10,8 +10,22 @@ public class CoinManager : MonoBehaviour
             if (health != null)
             {
                health.SetCehckpoint(transform.position);
+
+                SoundManager soundManager = FindAnyObjectByType<SoundManager>();
+                if (soundManager != null)
+                {
+                    soundManager.CheckPointCal();
+                }
+
+                MeshRenderer mr = GetComponent<MeshRenderer>();
+                if (mr != null) mr.enabled = false;
+
+                Collider col = GetComponent<Collider>();
+                if (col != null) col.enabled = false;
+
+                Destroy(gameObject, 1f);
             }
-            Destroy(gameObject);
+           
         }
     }
 }
