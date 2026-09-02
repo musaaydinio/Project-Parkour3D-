@@ -4,7 +4,7 @@
 This project is a reflex-based 3D parkour game where the player navigates upwards and forward to complete the course as fast as possible. The main objective is to dodge moving and surprise obstacles, reach the finish line in record time, and log the completion time onto the leaderboard.
 
 ## 🇬🇧 Gameplay & Overview
-> 📺 **You can watch the video showing the entire game and its progress here.:** [(https://lnkd.in/p/dFzaicG9)](#)
+> 📺 **You can watch the video showing the entire game and its progress here.:** (https://lnkd.in/p/dFzaicG9)(#)
 
 ## 🚀 Performance Optimization
 * **Distance-Based Activation:** To prevent obstacles and moving objects from running constantly and draining CPU resources, a custom `DistanceActivator` script was implemented. Obstacles only become active when the player approaches within a specific distance threshold, preserving optimal game performance.
