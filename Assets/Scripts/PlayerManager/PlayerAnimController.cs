@@ -20,6 +20,7 @@ public class PlayerAnimController : MonoBehaviour
 
     void Update()
     {
+        // Zýplama komutu geldiðinde karakter zemindeyse dikey eksende kuvvet uygulayýp animasyonlarý tetikliyoruz.
         if (Input.GetKeyDown(KeyCode.Space) && yerdemi)
         {
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, ziplamagücü, rb.linearVelocity.z);
@@ -31,6 +32,7 @@ public class PlayerAnimController : MonoBehaviour
             yerdemi = false;
         }
 
+        // Sol ve sað yönlü fiziksel hareketini yapýp ilgili animasyonlarý aktif ediyoruz.
         if (Input.GetKey(KeyCode.A))
         {
             anim.SetBool("isLeft", true);
@@ -49,7 +51,8 @@ public class PlayerAnimController : MonoBehaviour
         {
             anim.SetBool("isRight",false) ;
         }
-       
+
+        // Ýleri yönlü harekette koþma tuþuna basýlý tutulursa hýzý artýrýp koþma animasyonuna geçiþ yapýyoruz.
         if (Input.GetKey(KeyCode.W))
         {
            
@@ -72,6 +75,7 @@ public class PlayerAnimController : MonoBehaviour
                 transform.Translate(Vector3.forward * yürümeHizi * Time.deltaTime);
             }
         }
+        // Geriye doðru hareketlerde dengeyi saðlamak adýna hýzý yarýya düþürüyoruz.
         else if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("isWalking", true);
@@ -85,6 +89,7 @@ public class PlayerAnimController : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
     }
+    // Zemin algýlama sistemini Unity fizik motorunun çarpýþma metotlarý ile takip ediyoruz.
     private void OnCollisionStay(Collision collision)
     {
         yerdemi = true;
@@ -98,6 +103,7 @@ public class PlayerAnimController : MonoBehaviour
     {
         if (other.CompareTag("SonsuzZýplama"))
         {
+            // Birikmiþ düþüþ hýzýný sýfýrlayýp pürüzsüz bir sekme kuvveti uyguluyoruz.
             if (rb != null)
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 

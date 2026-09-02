@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 
+// Parkur boyunca geçen süreyi hesaplayýp ekrandaki kronometre arayüzüne anlýk olarak yansýtýyoruz.
 public class SureText : MonoBehaviour
 {
     public TextMeshProUGUI oyunSayac;
@@ -10,13 +11,15 @@ public class SureText : MonoBehaviour
 
     private void Update()
     {
+        // Zamanlayýcý aktifse her karede geçen süreyi toplayýp dakika ve saniye formatýna dönüþtürüyoruz.
         if (devamEdiyor)
         {
             gecenZaman += Time.deltaTime;
             int dakika = Mathf.FloorToInt(gecenZaman / 60f);
-            int saniye=Mathf.FloorToInt(gecenZaman % 60f);           
+            int saniye=Mathf.FloorToInt(gecenZaman % 60f);
 
-            if(oyunSayac != null)
+            // Hesaplanýlan süreyi dijital saat formatýnda ekrandaki metin bileþenine yazdýrýyoruz.
+            if (oyunSayac != null)
             {
                 oyunSayac.text = string.Format("{0:00}:{1:00}", dakika, saniye);
                 

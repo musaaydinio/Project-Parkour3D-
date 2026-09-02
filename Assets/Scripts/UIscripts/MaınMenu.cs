@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Oyunun ana menüsündeki arayüz geçişlerini, oyuna başlama ve çıkış işlemlerini yönetiyoruz.
 public class MaınMenu : MonoBehaviour
 {
     public GameObject ayarlarPaneli;
@@ -9,6 +10,7 @@ public class MaınMenu : MonoBehaviour
 
     private void Start()
     {
+        // Ana menü yüklendiğinde ekranın temiz görünmesi için alt panelleri kapalı konuma getiriyoruz.
         ayarlarPaneli.SetActive(false);
         skorPaneli.SetActive(false);
     }

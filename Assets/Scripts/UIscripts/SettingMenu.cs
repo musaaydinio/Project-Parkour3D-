@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Oyunun çözünürlük, tam ekran, ses ve kare hýzý ayarlarýný UI üzerinden yönetiyoruz.
 public class SettingMenu : MonoBehaviour
 {
     public static int secilenKalite = 2;
    public void TamEkran(bool tamekranmi) 
    {
+        // Tam ekran ile pencereli mod arasýndaki geçiþi saðlýyoruz.
         Screen.fullScreen = tamekranmi;
        
    }
 
     public void GrafikKalite(int indeks)
     {
-       
+        // Oyuncunun mevcut tam ekran tercihini bozmadan seçilen indekse göre ekran çözünürlüðünü deðiþtiriyoruz.
         bool mevcutTamEkran = Screen.fullScreen;
 
         if (indeks == 0)
@@ -33,10 +35,12 @@ public class SettingMenu : MonoBehaviour
 
     public void SesSeviye(float sesDegeri)
     {
+        // Oyunun genel ses dinleyicisinin þiddetini slider üzerinden gelen deðere göre güncelliyoruz.
         AudioListener.volume = sesDegeri;
     }
     public void FPSDeðeri(int fpsýndex)
     {
+        // Kontrol gecikmelerini önlemek için VSync ayarýný kapatýp hedef kare hýzýný oyuncunun seçimine göre sýnýrlandýrýyoruz.
         switch (fpsýndex)
         {
             case 0:

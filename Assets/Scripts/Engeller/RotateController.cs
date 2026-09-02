@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Dönen platformlarýn, çarklarýn veya testerelerin etiketlerine göre doðru eksende dönme hareketlerini ayarlýyoruz.
 public class RotateController : MonoBehaviour
 {
     public float donushizi = 100f;
@@ -8,11 +9,13 @@ public class RotateController : MonoBehaviour
 
     private void Update()
     {
+        // Objenin etiketine bakarak eðer yatay bir tuzaksa Y ekseni etrafýnda sürekli bir dönüþ kuvveti uyguluyoruz.
         if (CompareTag("Yatay"))
         {
             donecekTransform.Rotate(Vector3.up * donushizi * Time.deltaTime);
         }
-        if(CompareTag("Dikey"))
+        // Obje dikey bir tuzaksa dönüþü Z ekseni etrafýnda gerçekleþtiriyoruz.
+        if (CompareTag("Dikey"))
         {
             donecekTransform.Rotate(Vector3.forward*donushizi * Time.deltaTime);
         }

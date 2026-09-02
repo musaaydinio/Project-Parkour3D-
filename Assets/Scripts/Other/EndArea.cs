@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
+// Oyuncu parkurun sonuna ulaþtýðýnda oyunun bitiþ sürecini, süre hesaplamasýný ve skorlarýn kaydedilmesini yönetiyoruz.
 public class EndArea : MonoBehaviour
 {
     [Header("UI ve Zamanlama")]
@@ -17,6 +18,7 @@ public class EndArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Bitiþ çizgisi geçildiðinde tetiklenmeyi kontrol ediyoruz. Eðer oyun zaten bittiyse veya çarpan nesne oyuncu deðilse süreci durduruyoruz.
         if (oyunBitti || !other.CompareTag("Player")) return;
 
         oyunBitti = true;
@@ -25,9 +27,11 @@ public class EndArea : MonoBehaviour
         SureText sayac = FindFirstObjectByType<SureText>();
         if (sayac != null)
         {
+            // Zamanlayýcýyý durdurup, oyuncunun parkuru ne kadar sürede tamamladýðý verisini alýyoruz.
             sayac.OyunDurdur();
             float bitisSuresi = sayac.GetGecenZaman();
 
+            // Tamamlanma süresini yerel hafýzadaki liderlik tablosuna gönderiyoruz.
             SkorKaydet(bitisSuresi);
 
             if (finishPanel != null)
@@ -38,6 +42,7 @@ public class EndArea : MonoBehaviour
                     finishMenu.BolumuBitir(bitisSuresi);
                 }
             }
+            // Kazanma ses efektini ve görsel partikül efektlerini aktif ederek bitiþ anýný kutluyoruz.
             if (bitisEfekti != null)
             {
                 bitisEfekti.SetActive(true);
@@ -48,13 +53,14 @@ public class EndArea : MonoBehaviour
             {
                 soundManager.WinSesiCal();
             }
-
+            // Oyuncunun efektleri izleyebilmesi için arka planda bir geri sayým baþlatýyoruz.
             StartCoroutine(PaneliGecikmeliAc());
         }
     }
         
      IEnumerator PaneliGecikmeliAc()
     {
+        // Belirlediðimiz süre kadar bekleyip ardýndan bitiþ panelini açýyor ve oyun içi zamaný tamamen durduruyoruz.
         yield return new WaitForSeconds(gecikmeSuresi);
 
         if (finishPanel != null)
@@ -68,16 +74,18 @@ public class EndArea : MonoBehaviour
     void SkorKaydet(float yeniSure)
     {
         List<float> skorlar = new List<float>();
-      
+
+        // Yerel hafýzaya (PlayerPrefs) önceden kaydedilmiþ olan ilk 10 skoru listemize çekiyoruz.
         for (int i = 0; i < 10; i++)
         {
             if (PlayerPrefs.HasKey("Skor_" + i))
                 skorlar.Add(PlayerPrefs.GetFloat("Skor_" + i));
         }
-        
+        // Yeni elde edilen süreyi listeye ekleyip küçükten büyüðe (en kýsa süreden en uzuna) doðru sýralýyoruz.
         skorlar.Add(yeniSure);
         skorlar.Sort();
-        
+
+        // Sýralanmýþ listedeki en iyi ilk 10 skoru tekrar yerel hafýzaya yazdýrýp cihazda kalýcý olarak kaydediyoruz.
         for (int i = 0; i < Mathf.Min(skorlar.Count, 10); i++)
         {
             PlayerPrefs.SetFloat("Skor_" + i, skorlar[i]);

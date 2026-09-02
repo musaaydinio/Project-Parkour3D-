@@ -1,6 +1,8 @@
 using UnityEngine;
 
-public class MesafeAktiflestirici : MonoBehaviour
+// Parkur haritasýndaki hareketli engellerin ve tuzaklarýn sadece oyuncu yaklaþtýðýnda
+// çalýþmasýný saðlayarak oyunun genel performansýný optimize ediyoruz.
+public class DistanceActivator : MonoBehaviour
 {
     [Header("Mesafe Ayarý")]
     public float calismaMesafesi = 8f;
@@ -13,33 +15,36 @@ public class MesafeAktiflestirici : MonoBehaviour
 
     private void Awake()
     {
-        // Objedeki ve tüm alt objelerindeki Animator ve Script bileþenlerini yakala
+        // Objenin kendi üzerindeki ve alt objelerindeki tüm animasyon ve script bileþenlerini baþlangýçta tespit edip listeliyoruz.
+        animatorlar = GetComponentsInChildren<Animator>(true);
         animatorlar = GetComponentsInChildren<Animator>(true);
         scriptler = GetComponentsInChildren<MonoBehaviour>(true);
     }
 
     private void Start()
     {
+        // Oyun baþladýðýnda oyuncu referansýný buluyor ve gereksiz iþlemci tüketimini önlemek için engelleri donuk halde baþlatýyoruz.
         KarakteriBul();
-        Dondur(); // Oyun baþlarken mesafedekileri dondurarak baþlat
+        Dondur(); 
     }
 
     private void Update()
     {
+        // Oyuncu sahnede henüz yoksa veya referansý koptuysa aramaya devam ediyoruz.    
         if (oyuncu == null)
         {
-            KarakteriBul();
-            return;
+         KarakteriBul();
+         return;
         }
-
+        // Oyuncu ile engel arasýndaki anlýk mesafeyi ölçüyoruz.
         float mesafe = Vector3.Distance(transform.position, oyuncu.position);
 
-        // Karakter mesafeye girdi -> ÇALIÞTIR
+        // Oyuncu belirlediðimiz çalýþma menziline girerse sistemi uyandýrýyor, uzaklaþýrsa tekrar donduruyoruz.
         if (mesafe <= calismaMesafesi && !calisiyorMu)
+            if (mesafe <= calismaMesafesi && !calisiyorMu)
         {
             Calistir();
         }
-        // Karakter mesafeden çýktý -> DONDUR
         else if (mesafe > calismaMesafesi && calisiyorMu)
         {
             Dondur();
@@ -48,6 +53,7 @@ public class MesafeAktiflestirici : MonoBehaviour
 
     private void KarakteriBul()
     {
+        // Sahnede Player etiketine sahip objeyi bulup hedef referansýmýza eþitliyoruz.
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null)
         {
@@ -59,13 +65,13 @@ public class MesafeAktiflestirici : MonoBehaviour
     {
         calisiyorMu = true;
 
-        // 1. Animasyonlarý kaldýðý yerden baþlat (Hýz = 1)
+        // Oyuncu menzile girdiðinde animasyonlarý normal hýzýna döndürüyoruz.
         foreach (var anim in animatorlar)
         {
             if (anim != null) anim.speed = 1f;
         }
 
-        // 2. Scriptleri çalýþtýr (Bu mesafe kontrol scripti hariç)
+        // Kapatýlmýþ olan tüm mekanik scriptleri tekrar aktif hale getiriyoruz.
         foreach (var s in scriptler)
         {
             if (s != null && s != this) s.enabled = true;
@@ -76,22 +82,23 @@ public class MesafeAktiflestirici : MonoBehaviour
     {
         calisiyorMu = false;
 
-       
+        // Oyuncu menzilden çýktýðýnda iþlemciyi yormamak adýna animasyonlarý tamamen durduruyoruz.
         foreach (var anim in animatorlar)
         {
             if (anim != null) anim.speed = 0f;
         }
 
-        // 2. Scriptleri devre dýþý býrak (Bu mesafe kontrol scripti hariç)
+        // Mesafe kontrolünü yapan bu script hariç, engel üzerindeki diðer tüm scriptleri kapatýyoruz.
         foreach (var s in scriptler)
         {
             if (s != null && s != this) s.enabled = false;
         }
     }
 
-    // Sahne görünümünde alaný yeþil çember olarak gösterir
     private void OnDrawGizmosSelected()
     {
+        // Unity editörü üzerinde bölüm tasarýmý yaparken mesafe sýnýrýný gözle görebilmek için
+        // objenin etrafýna yeþil bir kýlavuz küre çizdiriyoruz.
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, calismaMesafesi);
     }

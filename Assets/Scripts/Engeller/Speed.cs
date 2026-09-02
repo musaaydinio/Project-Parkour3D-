@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+// Karakterin hýzýný geçici olarak artýran hýzlandýrma bantlarý veya boost alanlarýný yönetiyoruz.
 public class Speed : MonoBehaviour
 {
     public float hýzlýyürüme = 25f;
@@ -12,6 +13,7 @@ public class Speed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Oyuncu hýzlandýrma alanýna temas ettiði anda yürüme ve koþma hýzlarýný belirlediðimiz yüksek deðerlere çekiyoruz.
         if (other.CompareTag("Player"))
         {
             PlayerAnimController oyuncu=other.GetComponent<PlayerAnimController>();
@@ -25,6 +27,7 @@ public class Speed : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        // Hýzlandýrma bandýndan çýkýldýðýnda karakterin hýzýný oyunun varsayýlan standart ayarlarýna geri döndürüyoruz.
         if (other.CompareTag("Player"))
         {
             PlayerAnimController oyuncu = other.GetComponent<PlayerAnimController>();

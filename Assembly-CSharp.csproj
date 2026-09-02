@@ -61,28 +61,28 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerAnimController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\PausePanel.cs" />
-    <Compile Include="Assets\Scripts\CoinManager.cs" />
     <Compile Include="Assets\Scripts\Engeller\Slow.cs" />
-    <Compile Include="Assets\Scripts\HealtController.cs" />
+    <Compile Include="Assets\Scripts\Other\CameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\FinishMenü.cs" />
     <Compile Include="Assets\Scripts\Engeller\RotateController.cs" />
-    <Compile Include="Assets\Scripts\SpownEnemyManager.cs" />
-    <Compile Include="Assets\Scripts\StartArea.cs" />
     <Compile Include="Assets\Scripts\Engeller\Staplebarrier.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SureText.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager\HealtController.cs" />
     <Compile Include="Assets\Scripts\Engeller\DistanceActivator.cs" />
     <Compile Include="Assets\Scripts\Engeller\ObstacleController.cs" />
-    <Compile Include="Assets\Scripts\EndArea.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager\PlayerAnimController.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\MaınMenu.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SkorPanel.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Engeller\ÇarkMoment.cs" />
+    <Compile Include="Assets\Scripts\Other\CoinManager.cs" />
+    <Compile Include="Assets\Scripts\Other\SpownEnemyManager.cs" />
     <Compile Include="Assets\Scripts\Engeller\MovingWheels.cs" />
+    <Compile Include="Assets\Scripts\Other\EndArea.cs" />
+    <Compile Include="Assets\Scripts\Other\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Other\StartArea.cs" />
     <Compile Include="Assets\Scripts\Engeller\Speed.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SettingMenu.cs" />
   </ItemGroup>
   <ItemGroup>

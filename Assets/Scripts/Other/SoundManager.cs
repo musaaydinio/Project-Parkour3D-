@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Parkur oyunumuzdaki tüm arka plan müziklerini ve anlýk ses efektlerini
+// (zýplama, hasar, ölüm, bitiþ vb.) merkezi tek bir noktadan yönetiyoruz.
 public class SoundManager : MonoBehaviour
 {
     [Header("Ses Kaynaklarý")]    
