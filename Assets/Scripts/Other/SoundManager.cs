@@ -18,7 +18,6 @@ public class SoundManager : MonoBehaviour
     public AudioClip gameOverSesi;
     public AudioClip konusmaSesi;
 
-    // Kodun kendi yönettiði gizli kanallar (Inspector'da atama yapman gerekmez)
     private AudioSource muzikKaynagi;
     private AudioSource efektKaynagi;
     private AudioSource konusmaKaynagi;
@@ -29,10 +28,10 @@ public class SoundManager : MonoBehaviour
         muzikKaynagi = gameObject.AddComponent<AudioSource>();
         muzikKaynagi.loop = true;
 
-        // 2. Anlýk Efektler Kanalý (Zýplama, Bitiþ, Hasar)
+        // 2. Anlýk Efektler Kanalý
         efektKaynagi = gameObject.AddComponent<AudioSource>();
 
-        // 3. Konuþma Kanalý ("Bla bla" diyalog sesi)
+        // 3. Konuþma Kanalý
         konusmaKaynagi = gameObject.AddComponent<AudioSource>();
         konusmaKaynagi.loop = true;
     }
@@ -67,7 +66,7 @@ public class SoundManager : MonoBehaviour
     public void WinSesiCal()
     {
         muzikKaynagi.Stop();        // Arka plan müziðini kapat
-        konusmaKaynagi.Stop();     // Varsa devam eden konuþma sesini kapat
+        konusmaKaynagi.Stop();     
 
         if (winSesi != null)
         {

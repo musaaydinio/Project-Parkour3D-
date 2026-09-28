@@ -8,12 +8,10 @@ public class LoadingManager : MonoBehaviour
 {
     [Header("UI Elemanlarý")]
     public GameObject loadingPanel;
-    public TextMeshProUGUI yuzdeText;    // %0 - %100 yazýsý
-    public Image dolumBarImage;         // Görsel dolum barý (Fill Image)
-
+    public TextMeshProUGUI yuzdeText;    
+    public Image dolumBarImage;       
     [Header("Yükleme Ayarlarý")]
-    public float beklemeSuresi = 5f;     // 5 saniyelik yükleme süresi
-
+    public float beklemeSuresi = 5f;     
     [Header("Oyuncu Kilidi")]
     public GameObject playerObj;
 
@@ -28,7 +26,6 @@ public class LoadingManager : MonoBehaviour
         StartCoroutine(SahneyeGirisEfekti());
     }
 
-    // --- 1. SAHNEYE GÝRERKEN (Panel Açýlýr -> Bar Dolar -> Panel Kapanýr) ---
     private IEnumerator SahneyeGirisEfekti()
     {
         loadingPanel.SetActive(true);
@@ -40,10 +37,8 @@ public class LoadingManager : MonoBehaviour
         OyuncuKontrolunuAyarla(true);
     }
 
-    // --- 2. MENÜYE DÖNERKEN (Panel Tekrar Açýlýr -> 5sn Dolar -> Menüye Geçer) ---
     public void AnaMenuyeDon()
     {
-        // Doðrudan ana menünün sahne adýný yazýyoruz (Örn: "MaýnMenu")
         StartCoroutine(SahnedenCikisEfekti("MaýnMenu"));
     }
 
@@ -55,9 +50,8 @@ public class LoadingManager : MonoBehaviour
 
     private IEnumerator SahnedenCikisEfekti(string sahneAdi)
     {
-        Time.timeScale = 1f; // Bitiþ menüsünde oyun durduysa zamaný açýyoruz
+        Time.timeScale = 1f; 
 
-        // CANVAS / PANELÝ TEKRAR AKTÝF EDÝYORUZ!
         loadingPanel.SetActive(true);
         OyuncuKontrolunuAyarla(false);
 

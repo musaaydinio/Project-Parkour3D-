@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\3D_PARKUR_GAME\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|c:\\users\\hp\\3d_parkur_game\\assets\\scripts\\other\\gamestory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\gamestory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|c:\\users\\hp\\3d_parkur_game\\assets\\scripts\\uiscripts\\finishmen\u00FC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\finishmen\u00FC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\distanceactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\distanceactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\playermanager\\playeranimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager\\playeranimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\loadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\loadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\skorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\skorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|c:\\users\\hp\\3d_parkur_game\\assets\\scripts\\playermanager\\playeranimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager\\playeranimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\startarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\startarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\yellowzonetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\yellowzonetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\gamestory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\gamestory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\endarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\endarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\distanceactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\distanceactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\skorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\skorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\suretext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,18 +59,6 @@
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\spownenemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\ma\u0131nmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\endarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\endarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\yellowzonetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\yellowzonetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\movingwheels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engeller\\movingwheels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,20 +67,12 @@
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\other\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\other\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\settingmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\settingmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\uiscripts\\finishmen\u00FC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\finishmen\u00FC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88CF03E3-F52F-B2D8-0247-A643EAEBD723}|Assembly-CSharp.csproj|C:\\Users\\hp\\3D_PARKUR_GAME\\assets\\scripts\\engeller\\staplebarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,16 +142,76 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartArea.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\StartArea.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\StartArea.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\StartArea.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Other\\StartArea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T14:16:15.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SureText.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SureText.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SureText.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SureText.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\SureText.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T15:38:29.013Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FinishMen\u00FC.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T11:35:16.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EndArea.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\EndArea.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\EndArea.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\EndArea.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Other\\EndArea.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAJ0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T14:07:27.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GameStory.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\GameStory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\GameStory.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\GameStory.cs",
               "RelativeToolTip": "Assets\\Scripts\\Other\\GameStory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAIwJUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T10:39:07.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T10:39:07.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\CameraController.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Other\\CameraController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T14:05:38.491Z"
             },
             {
               "$type": "Document",
@@ -161,53 +221,78 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\LoadManager.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\LoadManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Other\\LoadManager.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAHEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T01:10:15.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T01:10:15.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DistanceActivator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\DistanceActivator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\DistanceActivator.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\DistanceActivator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Engeller\\DistanceActivator.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowEIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T03:22:24.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "SoundManager.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\SoundManager.cs",
               "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SoundManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Other\\SoundManager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwGwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswHQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T14:15:55.086Z",
+              "WhenOpened": "2026-08-26T14:15:55.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YellowZoneTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T16:24:53.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ma\u0131nMenu.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:23:32.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SpownEnemyManager.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SpownEnemyManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\SpownEnemyManager.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SpownEnemyManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Other\\SpownEnemyManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerAnimController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T14:16:06.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-26T05:16:04.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
+              "Title": "SkorPanel.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SkorPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SkorPanel.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SkorPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\SkorPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T11:18:56.542Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "MovingWheels.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\MovingWheels.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\MovingWheels.cs",
@@ -219,79 +304,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ma\u0131nMenu.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\Ma\u0131nMenu.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwDgAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "SpownEnemyManager.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SpownEnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\SpownEnemyManager.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\SpownEnemyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Other\\SpownEnemyManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T07:23:32.974Z"
+              "WhenOpened": "2026-08-26T14:16:06.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SkorPanel.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SkorPanel.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SkorPanel.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SkorPanel.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\SkorPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "DistanceActivator.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\DistanceActivator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Engeller\\DistanceActivator.cs",
+              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Engeller\\DistanceActivator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Engeller\\DistanceActivator.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowEIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T11:18:56.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerAnimController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerManager\\PlayerAnimController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T05:16:04.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StartArea.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\StartArea.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\StartArea.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\StartArea.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Other\\StartArea.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T14:16:15.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SureText.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SureText.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SureText.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SureText.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\SureText.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAwwIUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T15:38:29.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FinishMen\u00FC.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIscripts\\FinishMen\u00FC.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T11:35:16.564Z"
+              "WhenOpened": "2026-07-30T03:22:24.805Z"
             },
             {
               "$type": "Document",
@@ -307,47 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EndArea.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\EndArea.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\EndArea.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\EndArea.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Other\\EndArea.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAuwKYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T14:07:27.887Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "YellowZoneTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Other\\YellowZoneTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T16:24:53.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CameraController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\CameraController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\CameraController.cs",
-              "ToolTip": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\CameraController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Other\\CameraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T14:05:38.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CoinManager.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\Other\\CoinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Other\\CoinManager.cs",
@@ -430,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PausePanel.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\PausePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\PausePanel.cs",
@@ -442,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SettingMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\3D_PARKUR_GAME\\Assets\\Scripts\\UIscripts\\SettingMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIscripts\\SettingMenu.cs",

@@ -6,13 +6,13 @@ using UnityEngine.Video;
 public class EndArea : MonoBehaviour
 {
     [Header("UI ve Bitiþ Elemanlarý")]
-    public GameObject finishPanel;          // Bitiþ Yeniden Baþla / Ana Menü Paneli
-    public GameObject bitisEfekti;          // Konfeti / Partikül efekti
+    public GameObject finishPanel;          
+    public GameObject bitisEfekti;          
 
     [Header("Sarý Alan ve Sinematik Video")]
-    public GameObject sariAlanObject;       // Zirvedeki sarý obje (Trigger)
-    public GameObject videoRawImageObj;     // Videonun basýldýðý RawImage / Video Paneli
-    public VideoPlayer finalVideoPlayer;    // Video Player Bileþeni
+    public GameObject sariAlanObject;       
+    public GameObject videoRawImageObj;     
+    public VideoPlayer finalVideoPlayer;    
 
     private bool finishCizgisiGecildi = false;
     private bool videoBasladi = false;
@@ -58,7 +58,7 @@ public class EndArea : MonoBehaviour
         SoundManager soundManager = FindAnyObjectByType<SoundManager>();
         if (soundManager != null) soundManager.WinSesiCal();
 
-        // 3. Sarý Alaný Aç (Oyuncu serbestçe koþmaya ve hareket etmeye devam eder!)
+        // 3. Sarý Alaný Aç 
         if (sariAlanObject != null) sariAlanObject.SetActive(true);
 
         // 4. GameStory Script'indeki Bitiþ Daktilo Yazýsýný Çaðýr
@@ -69,7 +69,6 @@ public class EndArea : MonoBehaviour
         }
     }
 
-    // 2. AÞAMA: Sarý Alana (Kaçýþ Noktasýna) Girildiðinde Çalýþýr
     public void SariAlanaGirildi(GameObject playerObj)
     {
         if (videoBasladi) return;
@@ -82,7 +81,7 @@ public class EndArea : MonoBehaviour
             hikaye.HikayeGizle();
         }
 
-        // HAREKET VE GÖRSELLERÝ SARI ALANDA KAPATIYORUZ (Kamera AÇIK kalýr)
+        // HAREKET VE GÖRSELLERÝ SARI ALANDA KAPATIYORUZ 
         if (playerObj != null)
         {
             Rigidbody rb = playerObj.GetComponent<Rigidbody>();

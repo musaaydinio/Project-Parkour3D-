@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameStory : MonoBehaviour
 {
     [Header("Ortak UI Elemanlarý")]
-    public GameObject konusmaBalonuPanel;  // Konuþma balonu paneli
-    public TextMeshProUGUI hikayeText;      // Hikaye metni
-    public TextMeshProUGUI devamText;       // "Geçmek için ENTER'a bas" metin alaný
+    public GameObject konusmaBalonuPanel;  
+    public TextMeshProUGUI hikayeText;      
+    public TextMeshProUGUI devamText;       
 
     [Header("Daktilo Ayarlarý")]
     public float daktiloHizi = 0.035f;
