@@ -62,10 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UIscripts\PausePanel.cs" />
+    <Compile Include="Assets\Scripts\Other\YellowZoneTrigger.cs" />
     <Compile Include="Assets\Scripts\Engeller\Slow.cs" />
+    <Compile Include="Assets\Scripts\Other\LoadManager.cs" />
     <Compile Include="Assets\Scripts\Other\CameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\FinishMenü.cs" />
     <Compile Include="Assets\Scripts\Engeller\RotateController.cs" />
+    <Compile Include="Assets\Mountain Terrain rocks and tree\Script\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Engeller\Staplebarrier.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SureText.cs" />
     <Compile Include="Assets\Scripts\PlayerManager\HealtController.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Assets\Scripts\PlayerManager\PlayerAnimController.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\UIscripts\MaınMenu.cs" />
+    <Compile Include="Assets\Mountain Terrain rocks and tree\Script\Camera\FlyCameraControl.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SkorPanel.cs" />
     <Compile Include="Assets\Scripts\Engeller\ÇarkMoment.cs" />
     <Compile Include="Assets\Scripts\Other\CoinManager.cs" />
@@ -83,6 +87,7 @@
     <Compile Include="Assets\Scripts\Other\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Other\StartArea.cs" />
     <Compile Include="Assets\Scripts\Engeller\Speed.cs" />
+    <Compile Include="Assets\Scripts\Other\GameStory.cs" />
     <Compile Include="Assets\Scripts\UIscripts\SettingMenu.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -90,11 +95,14 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+    <None Include="Assets\BOXOPHOBIC\Utils\Shaders\Channel Preview.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\gems_gui\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -1357,6 +1365,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{FC19B196-362E-9F5F-75FE-0A62951600E3}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{DD604223-1B13-1EFC-18BD-BCA08165155E}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{D5D194C4-076E-2635-DCB4-BECDE1474854}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

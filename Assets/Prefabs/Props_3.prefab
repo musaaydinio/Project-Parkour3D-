@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 451580831953522310}
   - component: {fileID: -5055232034491128106}
   - component: {fileID: 1435347455686100557}
+  - component: {fileID: -4052459625550816424}
   m_Layer: 0
   m_Name: Props_3
   m_TagString: Untagged
@@ -154,4 +155,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17637df2bd7159a418855796eba57688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "hasarMiktar\u0131": 50
+  "hasarMiktar\u0131": 100
+--- !u!114 &-4052459625550816424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212586655933084006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819f903c4fa15784e8d4f06530955ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calismaMesafesi: 15

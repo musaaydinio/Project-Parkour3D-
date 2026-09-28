@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 // Oyunun ana menüsündeki arayüz geçişlerini, oyuna başlama ve çıkış işlemlerini yönetiyoruz.
 public class MaınMenu : MonoBehaviour
 {
+    [Header("Paneller")]
     public GameObject ayarlarPaneli;
     public GameObject skorPaneli;
     public GameObject klavyePanel;
@@ -11,37 +12,53 @@ public class MaınMenu : MonoBehaviour
     private void Start()
     {
         // Ana menü yüklendiğinde ekranın temiz görünmesi için alt panelleri kapalı konuma getiriyoruz.
-        ayarlarPaneli.SetActive(false);
-        skorPaneli.SetActive(false);
+        if (ayarlarPaneli != null) ayarlarPaneli.SetActive(false);
+        if (skorPaneli != null) skorPaneli.SetActive(false);
+        if (klavyePanel != null) klavyePanel.SetActive(false);
     }
-    public void OyunaBasla()
+
+    // Normal Mod Butonu (Sahne İndeksi: 1)
+    public void NormalModBasla()
     {
         SceneManager.LoadScene(1);
     }
+
+    // Zor Mod Butonu (Sahne İndeksi: 2)
+    public void ZorModBasla()
+    {
+        SceneManager.LoadScene(2); // Veya tırnak içinde sahne adı: SceneManager.LoadScene("ZorModScene");
+    }
+
     public void AyarlarAc()
     {
-        ayarlarPaneli.SetActive(true);
+        if (ayarlarPaneli != null) ayarlarPaneli.SetActive(true);
     }
+
     public void AyarlarKapat()
     {
-        ayarlarPaneli.SetActive(false);
+        if (ayarlarPaneli != null) ayarlarPaneli.SetActive(false);
     }
+
     public void SkorAc()
     {
-        skorPaneli.SetActive(true);
+        if (skorPaneli != null) skorPaneli.SetActive(true);
     }
+
     public void SkorKapat()
     {
-        skorPaneli.SetActive(false) ;
+        if (skorPaneli != null) skorPaneli.SetActive(false);
     }
+
     public void KlavyeAc()
     {
-        klavyePanel.SetActive(true);
+        if (klavyePanel != null) klavyePanel.SetActive(true);
     }
+
     public void KlavyeKapat()
     {
-        klavyePanel.SetActive(false) ;
+        if (klavyePanel != null) klavyePanel.SetActive(false);
     }
+
     public void OyundanCıkıs()
     {
         Application.Quit();

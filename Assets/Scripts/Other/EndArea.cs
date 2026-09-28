@@ -1,91 +1,155 @@
-using UnityEngine;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Video;
 
-// Oyuncu parkurun sonuna ulaþtýðýnda oyunun bitiþ sürecini, süre hesaplamasýný ve skorlarýn kaydedilmesini yönetiyoruz.
 public class EndArea : MonoBehaviour
 {
-    [Header("UI ve Zamanlama")]
-    public GameObject finishPanel;
-    public float gecikmeSuresi = 5f;
+    [Header("UI ve Bitiþ Elemanlarý")]
+    public GameObject finishPanel;          // Bitiþ Yeniden Baþla / Ana Menü Paneli
+    public GameObject bitisEfekti;          // Konfeti / Partikül efekti
 
-    [Header("Efect ve Ses")]
-    public GameObject bitisEfekti;
-    
+    [Header("Sarý Alan ve Sinematik Video")]
+    public GameObject sariAlanObject;       // Zirvedeki sarý obje (Trigger)
+    public GameObject videoRawImageObj;     // Videonun basýldýðý RawImage / Video Paneli
+    public VideoPlayer finalVideoPlayer;    // Video Player Bileþeni
 
-    private bool oyunBitti=false;
+    private bool finishCizgisiGecildi = false;
+    private bool videoBasladi = false;
 
+    private void Start()
+    {
+        if (videoRawImageObj != null) videoRawImageObj.SetActive(false);
+        if (sariAlanObject != null) sariAlanObject.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Bitiþ çizgisi geçildiðinde tetiklenmeyi kontrol ediyoruz. Eðer oyun zaten bittiyse veya çarpan nesne oyuncu deðilse süreci durduruyoruz.
-        if (oyunBitti || !other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player")) return;
 
-        oyunBitti = true;
+        // 1. AÞAMA: Finiþ Çizgisine Ýlk Temas
+        if (!finishCizgisiGecildi)
+        {
+            finishCizgisiGecildi = true;
+            FinisCizgisiniTetikle();
+        }
+    }
 
-       
+    private void FinisCizgisiniTetikle()
+    {
+        // 1. Sayacý durdur ve skoru kaydet
         SureText sayac = FindFirstObjectByType<SureText>();
         if (sayac != null)
         {
-            // Zamanlayýcýyý durdurup, oyuncunun parkuru ne kadar sürede tamamladýðý verisini alýyoruz.
             sayac.OyunDurdur();
             float bitisSuresi = sayac.GetGecenZaman();
-
-            // Tamamlanma süresini yerel hafýzadaki liderlik tablosuna gönderiyoruz.
             SkorKaydet(bitisSuresi);
 
             if (finishPanel != null)
             {
                 FinishMenü finishMenu = finishPanel.GetComponent<FinishMenü>();
-                if (finishMenu != null)
-                {
-                    finishMenu.BolumuBitir(bitisSuresi);
-                }
+                if (finishMenu != null) finishMenu.BolumuBitir(bitisSuresi);
             }
-            // Kazanma ses efektini ve görsel partikül efektlerini aktif ederek bitiþ anýný kutluyoruz.
-            if (bitisEfekti != null)
-            {
-                bitisEfekti.SetActive(true);
-            }
+        }
 
-            SoundManager soundManager = FindAnyObjectByType<SoundManager>();
-            if (soundManager != null)
-            {
-                soundManager.WinSesiCal();
-            }
-            // Oyuncunun efektleri izleyebilmesi için arka planda bir geri sayým baþlatýyoruz.
-            StartCoroutine(PaneliGecikmeliAc());
+        // 2. Efekt ve Kazanma Sesini Çalýþtýr
+        if (bitisEfekti != null) bitisEfekti.SetActive(true);
+
+        SoundManager soundManager = FindAnyObjectByType<SoundManager>();
+        if (soundManager != null) soundManager.WinSesiCal();
+
+        // 3. Sarý Alaný Aç (Oyuncu serbestçe koþmaya ve hareket etmeye devam eder!)
+        if (sariAlanObject != null) sariAlanObject.SetActive(true);
+
+        // 4. GameStory Script'indeki Bitiþ Daktilo Yazýsýný Çaðýr
+        GameStory hikaye = FindFirstObjectByType<GameStory>();
+        if (hikaye != null)
+        {
+            hikaye.FinishHikayesiGoster();
         }
     }
-        
-     IEnumerator PaneliGecikmeliAc()
-    {
-        // Belirlediðimiz süre kadar bekleyip ardýndan bitiþ panelini açýyor ve oyun içi zamaný tamamen durduruyoruz.
-        yield return new WaitForSeconds(gecikmeSuresi);
 
-        if (finishPanel != null)
+    // 2. AÞAMA: Sarý Alana (Kaçýþ Noktasýna) Girildiðinde Çalýþýr
+    public void SariAlanaGirildi(GameObject playerObj)
+    {
+        if (videoBasladi) return;
+        videoBasladi = true;
+
+        // Ekranda açýk kalan konuþma balonunu/daktilo yazýsýný kapat
+        GameStory hikaye = FindFirstObjectByType<GameStory>();
+        if (hikaye != null)
         {
-            finishPanel.SetActive(true);
+            hikaye.HikayeGizle();
         }
 
+        // HAREKET VE GÖRSELLERÝ SARI ALANDA KAPATIYORUZ (Kamera AÇIK kalýr)
+        if (playerObj != null)
+        {
+            Rigidbody rb = playerObj.GetComponent<Rigidbody>();
+            if (rb != null) rb.isKinematic = true;
+
+            CharacterController cc = playerObj.GetComponent<CharacterController>();
+            if (cc != null) cc.enabled = false;
+
+            MonoBehaviour[] tumScriptler = playerObj.GetComponents<MonoBehaviour>();
+            foreach (MonoBehaviour script in tumScriptler)
+            {
+                if (script != this)
+                {
+                    script.enabled = false;
+                }
+            }
+
+            Renderer[] renderers = playerObj.GetComponentsInChildren<Renderer>();
+            foreach (Renderer r in renderers)
+            {
+                if (r is MeshRenderer || r is SkinnedMeshRenderer)
+                {
+                    r.enabled = false;
+                }
+            }
+        }
+
+        // Videoyu baþlat ve ekraný aç
+        if (videoRawImageObj != null && finalVideoPlayer != null)
+        {
+            videoRawImageObj.SetActive(true);
+            finalVideoPlayer.playOnAwake = false;
+            finalVideoPlayer.loopPointReached += OnVideoBitti;
+            finalVideoPlayer.Play();
+        }
+        else
+        {
+            OnVideoBitti(finalVideoPlayer);
+        }
+    }
+
+    private void OnVideoBitti(VideoPlayer vp)
+    {
+        if (finalVideoPlayer != null)
+        {
+            finalVideoPlayer.loopPointReached -= OnVideoBitti;
+        }
+
+        if (videoRawImageObj != null) videoRawImageObj.SetActive(false);
+
+        if (finishPanel != null) finishPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 
-    void SkorKaydet(float yeniSure)
+    private void SkorKaydet(float yeniSure)
     {
         List<float> skorlar = new List<float>();
 
-        // Yerel hafýzaya (PlayerPrefs) önceden kaydedilmiþ olan ilk 10 skoru listemize çekiyoruz.
         for (int i = 0; i < 10; i++)
         {
             if (PlayerPrefs.HasKey("Skor_" + i))
                 skorlar.Add(PlayerPrefs.GetFloat("Skor_" + i));
         }
-        // Yeni elde edilen süreyi listeye ekleyip küçükten büyüðe (en kýsa süreden en uzuna) doðru sýralýyoruz.
+
         skorlar.Add(yeniSure);
         skorlar.Sort();
 
-        // Sýralanmýþ listedeki en iyi ilk 10 skoru tekrar yerel hafýzaya yazdýrýp cihazda kalýcý olarak kaydediyoruz.
         for (int i = 0; i < Mathf.Min(skorlar.Count, 10); i++)
         {
             PlayerPrefs.SetFloat("Skor_" + i, skorlar[i]);

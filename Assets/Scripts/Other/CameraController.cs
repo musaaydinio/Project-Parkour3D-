@@ -2,33 +2,52 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform hedef;
-    public float takiphizi = 10f;
-    public float fareHassasiyeti = 300f;
+    [Header("Hedef (Oyuncu)")]
+    public Transform target;
 
-    public float arkaMesafe = 4f;
+    [Header("Mesafe ve Yükseklik (Yerel Offset)")]
+    public Vector3 tpsOffset = new Vector3(0f, 2.2f, -4.5f);
+
+    [Header("Fare Hassasiyet Ayarlarý")]
+    public float mouseSensitivity = 1f;
+
+    [Header("Bakýþ Sýnýrlarý (Derece)")]
+    public float minPitch = -20f; // Aþaðý bakýþ sýnýrý
+    public float maxPitch = 50f;  // Yukarý bakýþ sýnýrý
+
+    private float pitch = 0f;
 
     private void Start()
     {
-        // Oyun baþladýðýnda, farenin ekrandan dýþarý çýkmasýný engellemek için imleci oyun penceresinin ortasýna kilitliyoruz.
+        // Target atanmadýysa otomatik olarak üst objeyi (Player) hedef al
+        if (target == null && transform.parent != null)
+        {
+            target = transform.parent;
+        }
+
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    // Karakterin fiziksel hareketleri bittikten sonra titremeleri önlemek adýna kamera güncellemelerini LateUpdate içinde yapýyoruz.
     private void LateUpdate()
     {
-        // Fareden gelen yatay eksen hareketini alarak hedef karakterimizi kendi ekseni etrafýnda döndürüyoruz.
-        float fareX = Input.GetAxisRaw("Mouse X") * fareHassasiyeti * Time.deltaTime;
-        hedef.Rotate(Vector3.up * fareX);
+        if (target == null) return;
 
-        // Kameranýn karakterin tam arkasýnda ve biraz yukarýsýnda duracaðý ideal konumu matematiksel olarak hesaplýyoruz.
-        Vector3 hedefPos = hedef.position - (hedef.forward * arkaMesafe);
-        hedefPos.y = hedef.position.y + 2.5f;
+        // 1. Fare girdilerini al
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-        // Kamerayý hedef pozisyona aniden ýþýnlamak yerine, Lerp fonksiyonu ile yumuþak bir þekilde süzülerek gitmesini saðlýyoruz.
-        transform.position = Vector3.Lerp(transform.position, hedefPos, takiphizi * Time.deltaTime);
+        // 2. Oyuncuyu (Üst Obje) yatayda döndür (Saða / Sola)
+        target.Rotate(Vector3.up * mouseX);
 
-        // Kameranýn merceðini karakterin hafifçe yukarýsýna odaklayarak daha iyi ve geniþ bir görüþ açýsý sunuyoruz.
-        transform.LookAt(hedef.position + Vector3.up * 1.5f);
+        // 3. Kameranýn dikey açýsýný hesapla ve sýnýrla (Yukarý / Aþaðý)
+        pitch -= mouseY;
+        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+
+        // 4. SADECE YEREL (Local) rotasyonu güncelle
+        transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+
+        // 5. Yerel offset'i açýyla çarparak dairesel yörüngeyi koru
+        transform.localPosition = Quaternion.Euler(pitch, 0f, 0f) * tpsOffset;
     }
 }

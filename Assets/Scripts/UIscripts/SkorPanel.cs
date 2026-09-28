@@ -1,5 +1,5 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 // Oyuncunun parkuru bitirme sürelerini cihaz hafýzasýndan çekip skor tablosunda dinamik olarak listeliyoruz.
 public class SkorPanel : MonoBehaviour
